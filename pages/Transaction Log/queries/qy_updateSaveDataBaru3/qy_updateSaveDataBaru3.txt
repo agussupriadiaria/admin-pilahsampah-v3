@@ -1,4 +1,4 @@
-USE u682594628_BxZ8n;
+USE u682594628_pilahsampah_db;
 INSERT INTO savedatabaru (date, jumlahbottle, saldo, transactioncode)
 SELECT sd.date, sd.jumlahbottle, sd.saldo, sd.transactioncode
 FROM savedata AS sd

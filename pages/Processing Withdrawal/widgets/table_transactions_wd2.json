@@ -406,7 +406,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{Select_transactions_wd2.data}}",
+  "tableData": "{{Select_transactions_wd3.data}}",
   "textSize": "0.875rem",
   "topRow": 69,
   "totalRecordsCount": "",

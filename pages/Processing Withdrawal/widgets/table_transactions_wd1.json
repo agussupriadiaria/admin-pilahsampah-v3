@@ -401,7 +401,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{qy_listingWithdrawal2.data}}",
+  "tableData": "{{qy_listingWithdrawal3.data}}",
   "textSize": "0.875rem",
   "topRow": 21,
   "totalRecordsCount": "",

@@ -24,7 +24,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 81,
   "needsErrorInfo": false,
-  "onClick": "{{qy_submitListingWithdrawal2.run().then(() => {\n  showAlert('Success. Please reload page!', 'success');\n}).catch(() => {\n  showAlert('Failed. Please check data!', 'error');\n});}}",
+  "onClick": "{{qy_submitListingWithdrawal3.run().then(() => {\n  showAlert('Success. Please reload page!', 'success');\n}).catch(() => {\n  showAlert('Failed. Please check data!', 'error');\n});}}",
   "originalBottomRow": 21,
   "originalTopRow": 17,
   "parentColumnSpace": 17.9375,
