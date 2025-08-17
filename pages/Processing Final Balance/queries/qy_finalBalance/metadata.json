@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68a1678a8fc1056ba0ac565c_0c8485b5-cdfc-4292-a944-660c7c683e1e",
-  "id": "Processing Final Balance_users3",
+  "gitSyncId": "68a1678a8fc1056ba0ac565c_e591d25e-34aa-4daa-9f8b-c7959328a332",
+  "id": "Processing Final Balance_qy_finalBalance",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM users",
+      "body": "SELECT \n\tID,\n\tuser_login,\n\tdisplay_name,\n\tpoint,\n\tuser_registered\nFROM wp_users",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "users3",
+    "name": "qy_finalBalance",
     "pageId": "Processing Final Balance",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }
