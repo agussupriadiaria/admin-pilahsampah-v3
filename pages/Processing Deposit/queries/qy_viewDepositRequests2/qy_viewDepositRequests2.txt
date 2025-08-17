@@ -1,0 +1,8 @@
+SELECT
+  *
+FROM
+  transactions
+WHERE
+  transactioncode LIKE '%{{table_transactions.searchText}}%'
+ORDER BY
+  {{table_transactions.sortOrder.column || 'no'}} {{table_transactions.sortOrder.order !== "desc" ? "" : "DESC"}}

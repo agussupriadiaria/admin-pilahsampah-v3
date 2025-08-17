@@ -1,0 +1,8 @@
+SELECT
+  *
+FROM
+  savedatabaru
+WHERE
+  transactioncode LIKE '%{{table_savedatabaru.searchText}}%'
+ORDER BY
+  {{table_savedatabaru.sortOrder.column || 'no'}} {{table_savedatabaru.sortOrder.order !== "desc" ? "" : "DESC"}}

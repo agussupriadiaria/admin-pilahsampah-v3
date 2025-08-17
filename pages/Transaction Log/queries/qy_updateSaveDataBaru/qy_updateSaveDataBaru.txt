@@ -1,0 +1,15 @@
+USE u682594628_bukutamu;
+INSERT INTO savedatabaru (barcode, time, date, jumlahbottle, saldopcs, saldo, transactioncode)
+SELECT sd.barcode, sd.time, sd.date, sd.jumlahbottle, sd.saldopcs, sd.saldo, sd.transactioncode
+FROM savedata AS sd
+WHERE (sd.transactioncode, sd.saldo) IN (
+	SELECT transactioncode, MAX(saldo)
+	FROM savedata
+	GROUP BY transactioncode
+)
+AND sd.transactioncode NOT IN (
+	SELECT transactioncode
+	FROM savedatabaru
+);
+
+TRUNCATE savedata;
