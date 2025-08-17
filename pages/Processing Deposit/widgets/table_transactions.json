@@ -373,7 +373,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{qy_viewDepositRequests2.data}}",
+  "tableData": "{{qy_viewDepositRequests3.data}}",
   "textSize": "0.875rem",
   "topRow": 79,
   "totalRecordsCount": "",

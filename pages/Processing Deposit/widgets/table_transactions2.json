@@ -32,7 +32,6 @@
     }
   },
   "columnOrder": [
-    "no",
     "transactioncode",
     "amount",
     "status",
@@ -41,7 +40,7 @@
     "user_id",
     "user_name"
   ],
-  "columnUpdatedAt": 1755348222231,
+  "columnUpdatedAt": 1755412462835,
   "columnWidthMap": {
     "customColumn1": 60,
     "no": 60
@@ -67,9 +66,6 @@
     },
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.no.computedValue"
     },
     {
       "key": "primaryColumns.transactioncode.computedValue"
@@ -200,37 +196,6 @@
       "notation": "standard",
       "originalId": "inputdate",
       "outputFormat": "DD/MM/YYYY",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "no": {
-      "alias": "no",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = table_transactions2.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentIndex+1)) : currentIndex+1 })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "no",
-      "index": 0,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "no",
-      "notation": "standard",
-      "originalId": "no",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -408,7 +373,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{qy_viewDepositSuccess2.data}}",
+  "tableData": "{{qy_viewDepositSuccess3.data}}",
   "textSize": "0.875rem",
   "topRow": 124,
   "totalRecordsCount": "",

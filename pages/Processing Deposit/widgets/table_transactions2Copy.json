@@ -32,7 +32,6 @@
     }
   },
   "columnOrder": [
-    "no",
     "transactioncode",
     "status",
     "inputdate",
@@ -40,7 +39,7 @@
     "user_id",
     "user_name"
   ],
-  "columnUpdatedAt": 1755348222663,
+  "columnUpdatedAt": 1755412401572,
   "columnWidthMap": {
     "customColumn1": 60,
     "no": 60
@@ -66,9 +65,6 @@
     },
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.no.computedValue"
     },
     {
       "key": "primaryColumns.transactioncode.computedValue"
@@ -165,37 +161,6 @@
       "notation": "standard",
       "originalId": "inputdate",
       "outputFormat": "DD/MM/YYYY",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "no": {
-      "alias": "no",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = table_transactions2Copy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentIndex+1)) : currentIndex+1 })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "no",
-      "index": 0,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "no",
-      "notation": "standard",
-      "originalId": "no",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -373,7 +338,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{qy_viewDepositInvalid2.data}}",
+  "tableData": "{{qy_viewDepositInvalid3.data}}",
   "textSize": "0.875rem",
   "topRow": 171,
   "totalRecordsCount": "",

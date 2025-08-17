@@ -446,7 +446,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{qy_listingTransactions2.data}}",
+  "tableData": "{{qy_listingTransactions3.data}}",
   "textSize": "0.875rem",
   "topRow": 21,
   "totalRecordsCount": 0,

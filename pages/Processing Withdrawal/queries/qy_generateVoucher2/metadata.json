@@ -1,6 +1,6 @@
 {
   "gitSyncId": "689d5bb735154e6d78240bfd_bad630b6-f8d7-4cba-a07c-1bce93dd3849",
-  "id": "Processing Withdrawal_qy_generateVoucher",
+  "id": "Processing Withdrawal_qy_generateVoucher2",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -10,7 +10,7 @@
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "qy_generateVoucher",
+    "name": "qy_generateVoucher2",
     "pageId": "Processing Withdrawal",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

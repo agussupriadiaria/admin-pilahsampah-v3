@@ -28,7 +28,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "onClick": "{{qy_listingTransactions2.run().then(() => {\n  showAlert('Success !', 'success');\n}).catch(() => {\n  showAlert('Error. Please check data !', 'error');\n});}}",
+  "onClick": "{{qy_listingTransactions3.run().then(() => {\n  showAlert('Success !', 'success');\n}).catch(() => {\n  showAlert('Error. Please check data !', 'error');\n});}}",
   "originalBottomRow": 21,
   "originalTopRow": 17,
   "parentColumnSpace": 20.25,

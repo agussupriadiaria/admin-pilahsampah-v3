@@ -25,7 +25,7 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 81,
   "needsErrorInfo": false,
-  "onClick": "{{qy_proceedDeposit2.run().then(() => {\n  showAlert('Success. Please reload page !', 'success');\n}).catch(() => {\n  showAlert('Failed. Please check data !', 'error');\n});}}",
+  "onClick": "{{qy_proceedDeposit3.run().then(() => {\n  showAlert('Success. Please reload page !', 'success');\n}).catch(() => {\n  showAlert('Failed. Please check data !', 'error');\n});}}",
   "originalBottomRow": 79,
   "originalTopRow": 75,
   "parentColumnSpace": 17.9375,
