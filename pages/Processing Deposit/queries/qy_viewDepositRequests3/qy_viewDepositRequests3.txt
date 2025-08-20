@@ -3,6 +3,6 @@ SELECT
 FROM
   transactions
 WHERE
-  transactioncode LIKE '%{{table_transactions.searchText}}%'
+  transactioncode LIKE '%{{table_depositRequest.searchText}}%'
 ORDER BY
-  {{table_transactions.sortOrder.column || 'no'}} {{table_transactions.sortOrder.order !== "desc" ? "" : "DESC"}}
+  {{table_depositRequest.sortOrder.column || 'no'}} {{table_depositRequest.sortOrder.order !== "desc" ? "" : "DESC"}}

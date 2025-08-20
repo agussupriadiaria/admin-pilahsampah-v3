@@ -1,5 +1,0 @@
-UPDATE transactions_wd 
-SET status = 'Success' 
-WHERE item = 'Withdrawal' 
-  AND status = 'Verify' 
-  AND amount >= 10000;

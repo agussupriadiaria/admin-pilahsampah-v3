@@ -1,4 +1,0 @@
-SELECT
-  user_id, user_name, transactioncode, transactiondate, amount, status, inputdate
-FROM
-  transactions_success

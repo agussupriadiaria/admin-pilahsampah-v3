@@ -1,8 +1,0 @@
-SELECT
-  *
-FROM
-  savedata
-WHERE
-  transactioncode LIKE '%{{table_savedata.searchText}}%'
-ORDER BY
-  {{table_savedata.sortOrder.column || 'no'}} {{table_savedata.sortOrder.order !== "desc" ? "" : "DESC"}}
