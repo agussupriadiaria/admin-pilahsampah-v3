@@ -7,16 +7,12 @@
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "ywi2q7kabf",
+  "key": "irdcvgtshp",
   "leftColumn": 32,
   "minWidth": 120,
   "mobileBottomRow": 21,
@@ -24,7 +20,6 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "onClick": "{{qy_listingTransactions3.run().then(() => {\n  showAlert('Success !', 'success');\n}).catch(() => {\n  showAlert('Error. Please check data !', 'error');\n});}}",
   "originalBottomRow": 21,
   "originalTopRow": 17,
   "parentColumnSpace": 20.25,
@@ -36,10 +31,10 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 48,
-  "text": "Review Deposit Reques !",
+  "text": "Get Preview Final Point !",
   "topRow": 17,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "7rhaxe52c5",
-  "widgetName": "button_reviewDeposit"
+  "widgetId": "nsgfrhirfo",
+  "widgetName": "button_previewFinalPoint"
 }
