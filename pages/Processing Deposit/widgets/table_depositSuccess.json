@@ -32,6 +32,7 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "transactioncode",
     "amount",
     "status",
@@ -40,7 +41,7 @@
     "user_id",
     "user_name"
   ],
-  "columnUpdatedAt": 1755412462835,
+  "columnUpdatedAt": 1755679864621,
   "columnWidthMap": {
     "customColumn1": 60,
     "no": 60
@@ -87,6 +88,9 @@
     },
     {
       "key": "primaryColumns.user_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -163,6 +167,39 @@
       "label": "amount",
       "notation": "standard",
       "originalId": "amount",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "no",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = table_depositSuccess.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentIndex+1)) : currentIndex+1 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "no",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

@@ -1,0 +1,7 @@
+UPDATE wp_users u
+JOIN (
+    SELECT user_id, SUM(amount) AS total_amount
+    FROM transactions_wd
+    GROUP BY user_id
+) t ON u.ID = t.user_id
+SET u.point = u.point - t.total_amount;

@@ -24,7 +24,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 81,
   "needsErrorInfo": false,
-  "onClick": "{{qy_generateVoucher3.run().then(() => {\n  showAlert('Success. Please reload page!', 'success');\n}).catch(() => {\n  showAlert('Failed. Please check data!', 'error');\n});}}",
+  "onClick": "{{qy_generateVoucher3.run().then(() => {\n  showAlert('Success. Please reload page!', 'success');\n}).catch(() => {\n  showAlert('Failed. Please check data!', 'error');\n});\nqy_pullPointFromAccount3.run().then(() => {\n  showAlert('Success. Please reload page !', 'success');\n}).catch(() => {\n  showAlert('Error. Please check data !', 'error');\n});}}",
   "originalBottomRow": 69,
   "originalTopRow": 65,
   "parentColumnSpace": 17.9375,
