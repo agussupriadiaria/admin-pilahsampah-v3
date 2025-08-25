@@ -66,9 +66,6 @@
       "key": "tableData"
     },
     {
-      "key": "totalRecordsCount"
-    },
-    {
       "key": "primaryColumns.EditActions1.saveButtonColor"
     },
     {
@@ -149,7 +146,7 @@
   "mobileTopRow": 61,
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_savedata1.run(() => {\n            showAlert(\"Successfully created!\");\n            Select_savedata2.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
-  "onPageChange": "{{\n            Select_savedata2.run();\n            Total_record_savedata1.run()\n          }}",
+  "onPageChange": "",
   "onSearchTextChanged": "",
   "onSort": "",
   "originalBottomRow": 76,
@@ -370,7 +367,7 @@
   "tableData": "{{Select_savedata3.data}}",
   "textSize": "0.875rem",
   "topRow": 32,
-  "totalRecordsCount": "{{Total_record_savedata1.data[0].count}}",
+  "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

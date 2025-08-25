@@ -446,6 +446,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
+  "serverSidePaginationEnabled": false,
   "tableData": "{{qy_listingTransactions3.data}}",
   "textSize": "0.875rem",
   "topRow": 21,

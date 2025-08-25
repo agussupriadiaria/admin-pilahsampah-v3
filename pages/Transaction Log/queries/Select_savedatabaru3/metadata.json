@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  date, jumlahbottle, saldo, transactioncode\nFROM\n  savedatabaru\nWHERE\n  transactioncode LIKE '%{{table_savedatabaru.searchText}}%'\nORDER BY\n  {{table_savedatabaru.sortOrder.column || 'no'}} {{table_savedatabaru.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}",
+      "body": "SELECT\n  date, jumlahbottle, saldo, transactioncode\nFROM\n  savedatabaru",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,11 +22,7 @@
       "name": "pilahsampah_db",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "name": "Select_savedatabaru3",
     "pageId": "Transaction Log",
     "runBehaviour": "ON_PAGE_LOAD",

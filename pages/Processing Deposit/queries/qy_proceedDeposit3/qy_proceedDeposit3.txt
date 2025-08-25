@@ -4,6 +4,11 @@ SELECT t.user_id, t.user_name, t.transactioncode, t.transactiondate, s.saldo, t.
 FROM transactions t
 JOIN savedatabaru s
   ON t.transactioncode = s.transactioncode AND t.transactiondate = s.date;
+/*
+- sesuaikan part query ini, agar data yang dihitung dari table transactions hanya yang value di kolom inject-nya '0'.
+- terus setelah dipindah ke table transactions_success, ubah value di kolom injectnya menjadi '1' 
+*/
+
 
 -- 2. Masukkan data yang tidak cocok ke table transactions_invalid dan set status = 'Invalid'
 INSERT INTO transactions_invalid (user_id, user_name, transactioncode, transactiondate, inputdate)
