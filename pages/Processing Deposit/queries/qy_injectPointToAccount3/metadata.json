@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE wp_users u\nJOIN (\n    SELECT user_id, SUM(amount) AS total_amount\n    FROM transactions_success\n    GROUP BY user_id\n) t ON u.ID = t.user_id\nSET u.point = u.point + t.total_amount;\n",
+      "body": "-- Update point user berdasarkan transaksi yang inject = 0\nUPDATE wp_users u\nJOIN (\n    SELECT user_id, SUM(amount) AS total_amount\n    FROM transactions_success\n    WHERE inject = 0\n    GROUP BY user_id\n) t ON u.ID = t.user_id\nSET u.point = u.point + t.total_amount;\n\n-- Tandai transaksi sudah diproses\nUPDATE transactions_success\nSET inject = 1\nWHERE inject = 0;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

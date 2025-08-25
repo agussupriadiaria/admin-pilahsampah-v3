@@ -38,10 +38,6 @@
     {
       "id": "Processing Withdrawal",
       "isDefault": false
-    },
-    {
-      "id": "Processing Final Balance",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
