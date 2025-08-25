@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "68a1678a8fc1056ba0ac565c_93f29f39-f126-4b08-8913-e4bdf4632f12",
-  "id": "Processing Withdrawal_qy_generateVoucher3",
+  "gitSyncId": "68a1678a8fc1056ba0ac565c_75c946fb-d50a-4d15-be0d-f6853277a143",
+  "id": "Processing Withdrawal_qy_updateAssighCafe",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE transactions_wd\nSET voucher = CONCAT(\n        'pilah',\n        LPAD(FLOOR(RAND() * 10000), 4, '0')\n    )\nWHERE status = 'Success'\n  AND (voucher IS NULL OR voucher = '');\n",
+      "body": "UPDATE transactions_wd\nSET assign = {{ table_WDRequest.updatedRow.assign }}\nWHERE voucher = {{ table_WDRequest.updatedRow.voucher }};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,8 +22,12 @@
       "name": "pilahsampah_db",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "qy_generateVoucher3",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "qy_updateAssighCafe",
     "pageId": "Processing Withdrawal",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
