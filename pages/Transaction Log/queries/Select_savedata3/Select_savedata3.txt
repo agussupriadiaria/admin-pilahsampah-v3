@@ -1,4 +1,4 @@
 SELECT
-  date, jumlahbottle, saldo, transactioncode
+  transactiondate, jumlahbottle, saldo, transactioncode
 FROM
   savedata

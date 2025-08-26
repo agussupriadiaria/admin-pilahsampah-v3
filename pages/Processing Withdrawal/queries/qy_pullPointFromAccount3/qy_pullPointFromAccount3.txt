@@ -24,5 +24,5 @@ JOIN (
 	) t ON u.ID = t.user_id
 	WHERE u.point < t.total_amount
 ) x ON tw.user_id = x.user_id
-SET tw.status = 'Insufficient'
+SET tw.status = 'Insufficient', tw.voucher = 'Insufficient'
 WHERE tw.status = 'Verify';
