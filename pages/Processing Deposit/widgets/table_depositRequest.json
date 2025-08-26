@@ -38,10 +38,9 @@
     "inputdate",
     "transactiondate",
     "user_id",
-    "user_name",
-    "inject"
+    "user_name"
   ],
-  "columnUpdatedAt": 1756097631335,
+  "columnUpdatedAt": 1756175410162,
   "columnWidthMap": {
     "customColumn1": 60,
     "no": 60
@@ -88,9 +87,6 @@
     },
     {
       "key": "primaryColumns.user_name.computedValue"
-    },
-    {
-      "key": "primaryColumns.inject.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -143,40 +139,6 @@
   "parentRowSpace": 10,
   "primaryColumnId": "no",
   "primaryColumns": {
-    "inject": {
-      "alias": "inject",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = table_depositRequest.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"inject\"])) : inject })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "inject",
-      "index": 6,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "inject",
-      "notation": "standard",
-      "originalId": "inject",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "inputdate": {
       "alias": "inputdate",
       "allowCellWrapping": false,
