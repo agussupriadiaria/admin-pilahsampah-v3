@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE transactions_wd\nSET voucher = CONCAT(\n        ELT(FLOOR(1 + (RAND() * 3)), 'cafe1','cafe2','cafe3'),\n        LPAD(FLOOR(RAND() * 10000), 4, '0'),\n        CHAR(FLOOR(65 + (RAND() * 26))),\n        CHAR(FLOOR(65 + (RAND() * 26)))\n    )\nWHERE status = 'Success'\n  AND (voucher IS NULL OR voucher = '');\n",
+      "body": "UPDATE transactions_wd\nSET voucher = CONCAT(\n        ELT(FLOOR(1 + (RAND() * 3)), 'cafe1','cafe2'),\n        LPAD(FLOOR(RAND() * 10000), 4, '0'),\n        CHAR(FLOOR(65 + (RAND() * 26))),\n        CHAR(FLOOR(65 + (RAND() * 26)))\n    )\nWHERE status = 'Success'\n  AND (voucher IS NULL OR voucher = '');\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
