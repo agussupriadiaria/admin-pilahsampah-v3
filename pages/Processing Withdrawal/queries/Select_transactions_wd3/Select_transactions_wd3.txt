@@ -1,4 +1,4 @@
 SELECT
-  user_id, user_name, amount, voucher,assign, status, inputdate, usagedate
+  user_id, user_name, amount, voucher, status, inputdate, usagedate
 FROM
   transactions_wd
