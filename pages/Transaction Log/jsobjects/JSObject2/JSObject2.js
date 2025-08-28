@@ -21,7 +21,7 @@ export default {
 
 			const headers = lines[0].split(",").map(h => h.trim());
 			const expectedHeaders = [
-				"date",
+				"transactiondate",
 				"jumlahbottle",
 				"saldo",
 				"transactioncode"
