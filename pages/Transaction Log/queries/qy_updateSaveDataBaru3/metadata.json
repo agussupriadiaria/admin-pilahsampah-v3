@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "USE u682594628_pilahsampah_db;\nINSERT INTO savedatabaru (date, jumlahbottle, saldo, transactioncode)\nSELECT sd.date, sd.jumlahbottle, sd.saldo, sd.transactioncode\nFROM savedata AS sd\nWHERE (sd.transactioncode, sd.saldo) IN (\n\tSELECT transactioncode, MAX(saldo)\n\tFROM savedata\n\tGROUP BY transactioncode\n)\nAND sd.transactioncode NOT IN (\n\tSELECT transactioncode\n\tFROM savedatabaru\n);\n\nTRUNCATE savedata;",
+      "body": "USE u682594628_pilahsampah_db;\nINSERT INTO savedatabaru (transactiondate, jumlahbottle, saldo, transactioncode)\nSELECT sd.transactiondate, sd.jumlahbottle, sd.saldo, sd.transactioncode\nFROM savedata AS sd\nWHERE (sd.transactioncode, sd.saldo) IN (\n\tSELECT transactioncode, MAX(saldo)\n\tFROM savedata\n\tGROUP BY transactioncode\n)\nAND sd.transactioncode NOT IN (\n\tSELECT transactioncode\n\tFROM savedatabaru\n);\n\nTRUNCATE savedata;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
