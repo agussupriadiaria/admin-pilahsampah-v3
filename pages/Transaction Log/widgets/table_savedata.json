@@ -34,13 +34,13 @@
   },
   "columnOrder": [
     "customColumn1",
-    "date",
     "jumlahbottle",
     "saldo",
     "transactioncode",
+    "transactiondate",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1755341577405,
+  "columnUpdatedAt": 1756348994472,
   "columnWidthMap": {
     "customColumn1": 60
   },
@@ -84,9 +84,6 @@
       "key": "primaryColumns.transactioncode.computedValue"
     },
     {
-      "key": "primaryColumns.date.computedValue"
-    },
-    {
       "key": "primaryColumns.jumlahbottle.computedValue"
     },
     {
@@ -94,6 +91,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.transactiondate.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -233,38 +233,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "date": {
-      "alias": "date",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "date",
-      "computedValue": "{{(() => { const tableData = table_savedata.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"date\"])) : date })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "date",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "date",
-      "notation": "standard",
-      "originalId": "date",
-      "outputFormat": "DD/MM/YYYY",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "jumlahbottle": {
       "alias": "jumlahbottle",
       "allowCellWrapping": false,
@@ -352,6 +320,41 @@
       "notation": "standard",
       "originalId": "transactioncode",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "transactiondate": {
+      "alias": "transactiondate",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "date",
+      "computedValue": "{{(() => { const tableData = table_savedata.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"transactiondate\"])) : transactiondate })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "transactiondate",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "transactiondate",
+      "notation": "standard",
+      "originalId": "transactiondate",
+      "outputFormat": "DD/MM/YYYY",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

@@ -19,6 +19,7 @@ export default {
 				return;
 			}
 
+			// Ambil header dari CSV
 			const headers = lines[0].split(",").map(h => h.trim());
 			const expectedHeaders = [
 				"transactiondate",
@@ -27,12 +28,14 @@ export default {
 				"transactioncode"
 			];
 
+			// Validasi header
 			const headerMismatch = expectedHeaders.some((h, i) => headers[i] !== h);
 			if (headerMismatch) {
 				showAlert("CSV header mismatch. Please use correct format.", "error");
 				return;
 			}
 
+			// Loop tiap baris data
 			for (let i = 1; i < lines.length; i++) {
 				const values = lines[i].split(",").map(v => v.trim());
 				if (values.length < headers.length) continue;
@@ -44,7 +47,7 @@ export default {
 
 				try {
 					await qy_uploadData3.run({
-						date: row.date,
+						transactiondate: row.transactiondate, // ✅ diperbaiki
 						jumlahbottle: parseInt(row.jumlahbottle),
 						saldo: parseInt(row.saldo),
 						transactioncode: row.transactioncode
