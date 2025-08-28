@@ -1,5 +1,5 @@
 INSERT INTO savedata (
-	 date, jumlahbottle, saldo, transactioncode
+	 transactiondate, jumlahbottle, saldo, transactioncode
 )
 VALUES (
 	{{this.params.transactiondate}},
